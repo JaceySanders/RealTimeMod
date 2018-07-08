@@ -12,6 +12,7 @@ public class ConfigHandler {
         ModInfo.MOD_ENABLED = config.get("modconfig", "mod_enabled", true).getBoolean(true);
         ModInfo.USE_SERVERTIME = config.get("timeconfig", "use_server_time", true).getBoolean(false);
         ModInfo.TIME_OFFSET = config.get("timeconfig", "time_offset", 0).getInt();
+        ModInfo.INIT_DATE = config.get("timeconfig", "init_date", date()).getFloat(); 
         config.save();
     }
 }
