@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 project.ext {
     major = "1"
-    minor = "1"
+    minor = "2"
     mcVersion = "1.10.2"
 }
 version = "${project.ext.mcVersion}-${project.ext.major}.${project.minor}"
